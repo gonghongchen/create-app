@@ -1,7 +1,8 @@
 import store from './reducer'
 import actions from './actions'
 import * as React from 'react'
-import {connect, Provider} from "react-redux";
+import {connect, Provider} from "react-redux"
+import {Link} from 'react-router-dom'
 
 store.subscribe(() => {
     console.log(store.getState())
@@ -48,6 +49,7 @@ const Show : React.SFC = (props : any) => {
             <button onClick={click.bind(null, 1)}>&nbsp;&nbsp;+1&nbsp;&nbsp;</button>
             <p>当前word为：{props.word}</p>
             <button onClick={modifyWord.bind(null)}>&nbsp;&nbsp;修改word&nbsp;&nbsp;</button>
+            <p><Link to='/mobx'>to mobx</Link></p>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import AppState from '../mobx/AppState'
 import ToDetail from '../pages/toDetial'
 import {observer} from 'mobx-react'
 import * as React from 'react'
+import {Link} from 'react-router-dom'
 
 const state = new AppState();
 interface ISentenceProps {
@@ -31,6 +32,7 @@ const Button : React.SFC < ISentenceProps > = observer(props => {
       <button onClick={click.bind(null, 1)}>&nbsp;&nbsp;+1&nbsp;&nbsp;</button>
       <p>当前数值为：{props.store.num}</p>
       <ToDetail />
+      <p><Link to='/redux'>to redux</Link></p>
     </div>
   )
 })
