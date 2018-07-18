@@ -6,10 +6,14 @@ import Detail from './pages/detail'
 import Mobx from './mobx/mobx'
 import Redux from './redux/redux'
 import {Link} from 'react-router-dom'
+import Text from './HOC/Hoc'
 
 const Index = () => {
   return (
-    <Link to='/mobx'>to mobx</Link>
+    <div>
+      <Link to='/mobx'>to mobx</Link>
+      <Text text='text' num={2}/>
+    </div>
   )
 }
 
