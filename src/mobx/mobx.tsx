@@ -30,7 +30,7 @@ const Button : React.SFC < ISentenceProps > = observer(props => {
     <div>
       <button onClick={click.bind(null, 0)}>&nbsp;&nbsp;-1&nbsp;&nbsp;</button>
       <button onClick={click.bind(null, 1)}>&nbsp;&nbsp;+1&nbsp;&nbsp;</button>
-      <p>当前数值为：{props.store.num}</p>
+      <p>当前数值为：{props.store.numVal}</p>
       <ToDetail />
       <p><Link to='/redux'>to redux</Link></p>
     </div>
