@@ -7,10 +7,10 @@
     "@types/react-router-dom": "^4.2.7",
     "mobx": "^5.0.3",
     "mobx-react": "^5.2.3",
-    "react": "^16.4.1",
+    "react": "16.6.0",
     "react-dom": "^16.4.1",
-    "react-redux": "^5.0.7",
-    "react-router-dom": "^4.3.1",
+    "react-redux": "5.1.1",
+    "react-router-dom": "^4.4.0-beta.6",
     "react-scripts-ts": "2.16.0",
     "redux": "^4.0.0"
   },
@@ -25,6 +25,6 @@
     "@types/node": "^10.5.2",
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
-    "typescript": "^2.9.2"
+    "typescript": "3.1.6"
   }
 }

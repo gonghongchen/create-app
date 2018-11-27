@@ -9,7 +9,7 @@ interface TextProps {
 }
 
 // props proxy
-const Hoc = (WrappedComponent: React.SFC) => {
+const Hoc = (WrappedComponent: React.SFC<TextProps & NewTextProps>) => {
     return (
         class HText extends React.Component<TextProps & NewTextProps> {
             public render() {
