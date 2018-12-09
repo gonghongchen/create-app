@@ -7,8 +7,6 @@ const { lazy, Suspense } = React;
 
 const NotFound = lazy(() => import('./pages/notFound'))
 
-console.log(Object.entries(components));
-
 export default () => (
   <Suspense fallback={<div>loading……</div>}>
     <Switch>
