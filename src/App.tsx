@@ -1,6 +1,6 @@
 import {Route, Switch, Redirect} from 'react-router-dom'
 import * as React from 'react'
-import components from './base/components'
+import components from 'base/components'
 import './App.css'
 
 const { lazy, Suspense } = React;
