@@ -1,17 +1,17 @@
 import * as React from 'react'
 
-interface NewTextProps {
+interface INewTextProps {
     text: string
 }
 
-interface TextProps {
+interface ITextProps {
     num? : number
 }
 
 // props proxy
-const Hoc = (WrappedComponent: React.SFC<TextProps & NewTextProps>) => {
+const Hoc = (WrappedComponent: React.SFC<ITextProps & INewTextProps>) => {
     return (
-        class HText extends React.Component<TextProps & NewTextProps> {
+        class HText extends React.Component<ITextProps & INewTextProps> {
             public render() {
                 return (
                     <WrappedComponent {...this.props} />
@@ -21,7 +21,7 @@ const Hoc = (WrappedComponent: React.SFC<TextProps & NewTextProps>) => {
     )
 }
 
-const Text = Hoc((props: TextProps & NewTextProps) => {
+const Text = Hoc((props: ITextProps & INewTextProps) => {
     return (
         <div>
             <p>--------------------------------------</p>
