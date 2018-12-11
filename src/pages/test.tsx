@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {Link} from 'react-router-dom'
+import { isEmpty } from 'lodash'
 
 const { PureComponent, Fragment } = React;
 
@@ -20,6 +21,7 @@ class Test extends PureComponent<ITestProps, ITestState> {
     constructor(props: ITestProps) {
         super(props);
         
+        console.log(isEmpty([]));
         // this.doClick = this.doClick.bind(this);
         // console.log(this);
     }
